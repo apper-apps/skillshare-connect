@@ -27,14 +27,14 @@ const SearchBar = ({ onSearch, placeholder = "Search skills..." }) => {
   return (
     <form onSubmit={handleSubmit} className="relative">
       <div className={`relative transition-all duration-200 ${isFocused ? "scale-105" : ""}`}>
-        <input
+<input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           placeholder={placeholder}
-          className="w-full pl-10 pr-10 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fresh-green focus:border-fresh-green transition-all duration-200"
+          className="w-full pl-10 pr-10 py-2 sm:py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fresh-green focus:border-fresh-green transition-all duration-200 text-sm sm:text-base"
         />
         
         <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
@@ -55,12 +55,12 @@ const SearchBar = ({ onSearch, placeholder = "Search skills..." }) => {
         )}
       </div>
       
-      {isFocused && (
+{isFocused && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 p-4 z-10"
+          className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-lg border border-gray-200 p-3 sm:p-4 z-10 max-w-[90vw] sm:max-w-full"
         >
           <div className="text-sm text-gray-600 mb-2">Popular searches:</div>
           <div className="flex flex-wrap gap-2">
@@ -70,9 +70,9 @@ const SearchBar = ({ onSearch, placeholder = "Search skills..." }) => {
                 type="button"
                 onClick={() => {
                   setQuery(term);
-                  onSearch(term);
+onSearch(term);
                 }}
-                className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-gray-200 transition-colors"
+                className="px-2 sm:px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs sm:text-sm hover:bg-gray-200 transition-colors"
               >
                 {term}
               </button>

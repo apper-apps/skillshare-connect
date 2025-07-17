@@ -84,11 +84,11 @@ const Calendar = () => {
   const monthSessions = getMonthSessions();
 
   return (
-    <div className="max-w-6xl mx-auto space-y-6">
+<div className="max-w-6xl mx-auto space-y-4 sm:space-y-6">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-display font-bold gradient-text">
+          <h1 className="text-2xl sm:text-3xl font-display font-bold gradient-text">
             Calendar
           </h1>
           <p className="text-gray-600 mt-2">
@@ -105,11 +105,10 @@ const Calendar = () => {
           </div>
         </div>
       </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
         {/* Calendar */}
         <div className="lg:col-span-2">
-          <div className="bg-white rounded-lg shadow-card p-6">
+          <div className="bg-white rounded-lg shadow-card p-4 sm:p-6">
             {/* Calendar Header */}
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center space-x-4">
@@ -130,11 +129,11 @@ const Calendar = () => {
                 </button>
               </div>
               
-              <div className="flex items-center space-x-2">
-                <button className="px-3 py-1 text-sm bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors">
+<div className="flex items-center space-x-2">
+                <button className="px-2 sm:px-3 py-1 text-xs sm:text-sm bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 transition-colors">
                   Today
                 </button>
-                <button className="btn-primary text-sm py-1">
+                <button className="btn-primary text-xs sm:text-sm py-1">
                   <ApperIcon name="Plus" size={16} />
                   <span className="ml-1">Add Session</span>
                 </button>
@@ -152,8 +151,8 @@ const Calendar = () => {
                 ))}
               </div>
 
-              {/* Calendar Days */}
-              <div className="grid grid-cols-7 gap-2">
+{/* Calendar Days */}
+              <div className="grid grid-cols-7 gap-1 sm:gap-2">
                 {calendarDays.map((day) => (
                   <CalendarDay
                     key={day.toString()}
@@ -168,11 +167,11 @@ const Calendar = () => {
           </div>
         </div>
 
-        {/* Session Details */}
-        <div className="space-y-6">
+{/* Session Details */}
+        <div className="space-y-4 sm:space-y-6">
           {/* Selected Date */}
-          <div className="bg-white rounded-lg shadow-card p-6">
-            <h3 className="text-lg font-display font-semibold text-gray-900 mb-4">
+          <div className="bg-white rounded-lg shadow-card p-4 sm:p-6">
+            <h3 className="text-base sm:text-lg font-display font-semibold text-gray-900 mb-4">
               {format(selectedDate, "MMMM d, yyyy")}
             </h3>
             
@@ -206,9 +205,9 @@ const Calendar = () => {
             )}
           </div>
 
-          {/* Upcoming Sessions */}
-          <div className="bg-white rounded-lg shadow-card p-6">
-            <h3 className="text-lg font-display font-semibold text-gray-900 mb-4">
+{/* Upcoming Sessions */}
+          <div className="bg-white rounded-lg shadow-card p-4 sm:p-6">
+            <h3 className="text-base sm:text-lg font-display font-semibold text-gray-900 mb-4">
               Upcoming Sessions
             </h3>
             

@@ -72,13 +72,13 @@ const NotificationBell = () => {
         )}
       </motion.button>
 
-      <AnimatePresence>
+<AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-50"
+            className="absolute right-0 mt-2 w-80 sm:w-96 max-w-[90vw] bg-white rounded-lg shadow-lg border border-gray-200 z-50"
           >
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-gray-200">
@@ -95,10 +95,10 @@ const NotificationBell = () => {
               )}
             </div>
 
-            {/* Notifications List */}
-            <div className="max-h-96 overflow-y-auto">
+{/* Notifications List */}
+            <div className="max-h-80 sm:max-h-96 overflow-y-auto">
               {notifications.length === 0 ? (
-                <div className="p-8 text-center">
+                <div className="p-6 sm:p-8 text-center">
                   <ApperIcon name="Bell" size={48} className="text-gray-300 mx-auto mb-4" />
                   <p className="text-gray-500">No notifications yet</p>
                 </div>
@@ -109,7 +109,7 @@ const NotificationBell = () => {
                       key={notification.Id}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      className={`p-4 hover:bg-gray-50 cursor-pointer transition-colors ${
+className={`p-3 sm:p-4 hover:bg-gray-50 cursor-pointer transition-colors ${
                         !notification.read ? "bg-blue-50 border-l-4 border-l-info-blue" : ""
                       }`}
                       onClick={() => markAsRead(notification.Id)}

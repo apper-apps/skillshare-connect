@@ -83,11 +83,11 @@ const MyExchanges = () => {
   }
 
   return (
-    <div className="max-w-6xl mx-auto space-y-6">
+<div className="max-w-6xl mx-auto space-y-4 sm:space-y-6">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-display font-bold gradient-text">
+          <h1 className="text-2xl sm:text-3xl font-display font-bold gradient-text">
             My Exchanges
           </h1>
           <p className="text-gray-600 mt-2">
@@ -105,8 +105,8 @@ const MyExchanges = () => {
         </div>
       </div>
 
-      {/* Filter Tabs */}
-      <div className="bg-white rounded-lg shadow-card p-6">
+{/* Filter Tabs */}
+      <div className="bg-white rounded-lg shadow-card p-4 sm:p-6">
         <div className="flex flex-wrap gap-2">
           {filters.map((filterOption) => (
             <motion.button
@@ -144,8 +144,8 @@ const MyExchanges = () => {
           message={`${filter === "all" ? "You haven't scheduled any sessions yet." : `No ${filter} sessions at the moment.`} Start by finding skill matches and scheduling your first exchange.`}
           onAction={() => window.location.href = "/"}
         />
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredSessions.map((session, index) => (
             <motion.div
               key={session.Id}

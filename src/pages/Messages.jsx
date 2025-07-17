@@ -105,20 +105,20 @@ const Messages = () => {
   const groupedMessages = groupMessagesByMatch(messages);
 
   return (
-    <div className="max-w-6xl mx-auto">
-      <div className="bg-white rounded-lg shadow-card overflow-hidden h-[600px]">
+<div className="max-w-6xl mx-auto">
+      <div className="bg-white rounded-lg shadow-card overflow-hidden h-[500px] sm:h-[600px]">
         <div className="flex h-full">
           {/* Conversations List */}
-          <div className="w-1/3 border-r border-gray-200 bg-gray-50">
-            <div className="p-4 border-b border-gray-200">
-              <h2 className="text-lg font-display font-semibold text-gray-900">
+          <div className="w-full sm:w-1/3 border-r border-gray-200 bg-gray-50">
+            <div className="p-3 sm:p-4 border-b border-gray-200">
+<h2 className="text-base sm:text-lg font-display font-semibold text-gray-900">
                 Messages
               </h2>
             </div>
             
             <div className="overflow-y-auto h-full">
-              {groupedMessages.length === 0 ? (
-                <div className="p-8 text-center">
+{groupedMessages.length === 0 ? (
+                <div className="p-6 sm:p-8 text-center">
                   <ApperIcon name="MessageCircle" size={48} className="text-gray-300 mx-auto mb-4" />
                   <p className="text-gray-500 text-sm">No conversations yet</p>
                 </div>
@@ -130,8 +130,8 @@ const Messages = () => {
                       <motion.button
                         key={matchId}
                         whileHover={{ backgroundColor: "#f9fafb" }}
-                        onClick={() => setSelectedMatch(matchId)}
-                        className={`w-full p-4 text-left hover:bg-gray-50 transition-colors ${
+onClick={() => setSelectedMatch(matchId)}
+                        className={`w-full p-3 sm:p-4 text-left hover:bg-gray-50 transition-colors ${
                           selectedMatch === matchId ? "bg-white border-r-4 border-r-forest-green" : ""
                         }`}
                       >
@@ -158,12 +158,12 @@ const Messages = () => {
             </div>
           </div>
 
-          {/* Chat Area */}
-          <div className="flex-1 flex flex-col">
+{/* Chat Area */}
+          <div className="flex-1 flex flex-col hidden sm:flex">
             {selectedMatch ? (
               <>
-                {/* Chat Header */}
-                <div className="p-4 border-b border-gray-200 bg-white">
+{/* Chat Header */}
+                <div className="p-3 sm:p-4 border-b border-gray-200 bg-white">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
                       <div className="w-10 h-10 bg-gradient-to-br from-warm-orange to-orange-500 rounded-full flex items-center justify-center">
@@ -193,8 +193,8 @@ const Messages = () => {
                   </div>
                 </div>
 
-                {/* Messages */}
-                <div className="flex-1 overflow-y-auto p-4 space-y-4">
+{/* Messages */}
+                <div className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-4">
                   {getSelectedMessages().map((message) => (
                     <ChatMessage
                       key={message.Id}
@@ -205,15 +205,15 @@ const Messages = () => {
                   ))}
                 </div>
 
-                {/* Message Input */}
-                <form onSubmit={handleSendMessage} className="p-4 border-t border-gray-200 bg-white">
+{/* Message Input */}
+                <form onSubmit={handleSendMessage} className="p-3 sm:p-4 border-t border-gray-200 bg-white">
                   <div className="flex items-center space-x-2">
                     <input
                       type="text"
                       value={newMessage}
                       onChange={(e) => setNewMessage(e.target.value)}
-                      placeholder="Type a message..."
-                      className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fresh-green focus:border-fresh-green"
+placeholder="Type a message..."
+                      className="flex-1 px-3 sm:px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-fresh-green focus:border-fresh-green text-sm sm:text-base"
                     />
                     <button
                       type="submit"

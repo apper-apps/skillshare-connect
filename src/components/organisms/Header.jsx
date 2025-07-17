@@ -62,16 +62,15 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Search Bar */}
-          <div className="hidden md:block flex-1 max-w-md mx-8">
+{/* Search Bar */}
+          <div className="hidden md:block flex-1 max-w-md mx-6">
             <SearchBar onSearch={handleSearch} />
           </div>
-
-          {/* Right Side */}
-          <div className="flex items-center space-x-4">
+{/* Right Side */}
+          <div className="flex items-center space-x-2 sm:space-x-4">
             {/* Credits Display */}
             <motion.div
-              className="hidden sm:flex items-center space-x-2 bg-gradient-to-r from-forest-green to-fresh-green text-white px-3 py-1 rounded-full"
+              className="hidden sm:flex items-center space-x-2 bg-gradient-to-r from-forest-green to-fresh-green text-white px-2 sm:px-3 py-1 rounded-full"
               whileHover={{ scale: 1.05 }}
             >
               <ApperIcon name="Coins" size={16} />
@@ -80,7 +79,6 @@ const Header = () => {
 
             {/* Notifications */}
             <NotificationBell />
-
             {/* Profile Dropdown */}
             <div className="relative">
               <motion.button
@@ -141,8 +139,8 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Search */}
-        <div className="md:hidden pb-4">
+{/* Mobile Search */}
+        <div className="md:hidden px-4 pb-4">
           <SearchBar onSearch={handleSearch} />
         </div>
       </div>
