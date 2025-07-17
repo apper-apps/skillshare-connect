@@ -138,12 +138,12 @@ const Header = () => {
             </button>
           </div>
         </div>
+</div>
 
 {/* Mobile Search */}
-        <div className="md:hidden px-4 pb-4">
+        <div className="md:hidden px-4 pr-16 pb-4">
           <SearchBar onSearch={handleSearch} />
         </div>
-      </div>
 
       {/* Mobile Navigation */}
       <AnimatePresence>
