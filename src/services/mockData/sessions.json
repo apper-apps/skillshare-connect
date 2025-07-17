@@ -1,0 +1,80 @@
+[
+  {
+    "Id": 1,
+    "matchId": 1,
+    "teacherId": 4,
+    "learnerId": 1,
+    "skillId": 6,
+    "scheduledDate": "2024-03-25T15:00:00Z",
+    "duration": 60,
+    "location": "Central Park Music Corner",
+    "status": "confirmed",
+    "credits": 1,
+    "notes": "Bring your own acoustic guitar"
+  },
+  {
+    "Id": 2,
+    "matchId": 2,
+    "teacherId": 1,
+    "learnerId": 3,
+    "skillId": 1,
+    "scheduledDate": "2024-03-28T18:00:00Z",
+    "duration": 90,
+    "location": "Community Kitchen",
+    "status": "pending",
+    "credits": 1.5,
+    "notes": "French cooking basics session"
+  },
+  {
+    "Id": 3,
+    "matchId": 3,
+    "teacherId": 2,
+    "learnerId": 5,
+    "skillId": 2,
+    "scheduledDate": "2024-03-30T19:00:00Z",
+    "duration": 120,
+    "location": "Mike's Home Office",
+    "status": "confirmed",
+    "credits": 2,
+    "notes": "Python fundamentals workshop"
+  },
+  {
+    "Id": 4,
+    "matchId": 4,
+    "teacherId": 3,
+    "learnerId": 2,
+    "skillId": 3,
+    "scheduledDate": "2024-04-02T10:00:00Z",
+    "duration": 60,
+    "location": "Riverside Yoga Studio",
+    "status": "completed",
+    "credits": 1,
+    "notes": "Morning yoga session"
+  },
+  {
+    "Id": 5,
+    "matchId": 5,
+    "teacherId": 5,
+    "learnerId": 4,
+    "skillId": 5,
+    "scheduledDate": "2024-04-05T17:00:00Z",
+    "duration": 45,
+    "location": "Coffee Shop Downtown",
+    "status": "confirmed",
+    "credits": 0.75,
+    "notes": "Spanish conversation practice"
+  },
+  {
+    "Id": 6,
+    "matchId": 6,
+    "teacherId": 4,
+    "learnerId": 1,
+    "skillId": 6,
+    "scheduledDate": "2024-04-08T14:00:00Z",
+    "duration": 60,
+    "location": "Music Room",
+    "status": "pending",
+    "credits": 1,
+    "notes": "Second guitar lesson"
+  }
+]

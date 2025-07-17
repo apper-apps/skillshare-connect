@@ -1,0 +1,76 @@
+[
+  {
+    "Id": 1,
+    "userId": 1,
+    "type": "match",
+    "title": "New Match Found!",
+    "message": "David Rodriguez can teach you guitar. 95% compatibility!",
+    "timestamp": "2024-03-20T09:30:00Z",
+    "read": false,
+    "data": {
+      "matchId": 1,
+      "userId": 4
+    }
+  },
+  {
+    "Id": 2,
+    "userId": 1,
+    "type": "message",
+    "title": "New Message",
+    "message": "David sent you a message about guitar lessons",
+    "timestamp": "2024-03-20T11:15:00Z",
+    "read": false,
+    "data": {
+      "matchId": 1,
+      "messageId": 2
+    }
+  },
+  {
+    "Id": 3,
+    "userId": 3,
+    "type": "session",
+    "title": "Session Confirmed",
+    "message": "Your cooking lesson with Sarah is confirmed for Thursday 6 PM",
+    "timestamp": "2024-03-21T16:00:00Z",
+    "read": true,
+    "data": {
+      "sessionId": 2
+    }
+  },
+  {
+    "Id": 4,
+    "userId": 2,
+    "type": "rating",
+    "title": "Please Rate Your Session",
+    "message": "How was your yoga session with Emma? Leave a review!",
+    "timestamp": "2024-03-22T11:30:00Z",
+    "read": false,
+    "data": {
+      "sessionId": 4
+    }
+  },
+  {
+    "Id": 5,
+    "userId": 4,
+    "type": "match",
+    "title": "New Learning Request",
+    "message": "Someone wants to learn Italian. You might be a good match!",
+    "timestamp": "2024-03-23T14:20:00Z",
+    "read": false,
+    "data": {
+      "skillId": 9
+    }
+  },
+  {
+    "Id": 6,
+    "userId": 5,
+    "type": "session",
+    "title": "Upcoming Session Reminder",
+    "message": "Spanish conversation with David is tomorrow at 5 PM",
+    "timestamp": "2024-03-24T10:00:00Z",
+    "read": true,
+    "data": {
+      "sessionId": 5
+    }
+  }
+]

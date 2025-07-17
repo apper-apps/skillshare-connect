@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "matchId": 1,
+    "senderId": 1,
+    "content": "Hi David! I'm excited to learn guitar from you. What should I bring to our first lesson?",
+    "timestamp": "2024-03-20T10:30:00Z",
+    "type": "text"
+  },
+  {
+    "Id": 2,
+    "matchId": 1,
+    "senderId": 4,
+    "content": "Hi Sarah! Great to meet you. Just bring your acoustic guitar and a pick. We'll start with basic chords and strumming patterns.",
+    "timestamp": "2024-03-20T11:15:00Z",
+    "type": "text"
+  },
+  {
+    "Id": 3,
+    "matchId": 1,
+    "senderId": 1,
+    "content": "Perfect! I have both. Should we meet at the music corner in Central Park?",
+    "timestamp": "2024-03-20T12:00:00Z",
+    "type": "text"
+  },
+  {
+    "Id": 4,
+    "matchId": 1,
+    "senderId": 4,
+    "content": "That sounds great! How about Monday at 3 PM?",
+    "timestamp": "2024-03-20T12:30:00Z",
+    "type": "session_request"
+  },
+  {
+    "Id": 5,
+    "matchId": 2,
+    "senderId": 3,
+    "content": "Hi Sarah! I'd love to learn some French cooking techniques. What's your teaching style?",
+    "timestamp": "2024-03-21T09:00:00Z",
+    "type": "text"
+  },
+  {
+    "Id": 6,
+    "matchId": 2,
+    "senderId": 1,
+    "content": "Hi Emma! I like to start with fundamental knife skills and then move to classic sauces. Very hands-on approach!",
+    "timestamp": "2024-03-21T10:30:00Z",
+    "type": "text"
+  },
+  {
+    "Id": 7,
+    "matchId": 3,
+    "senderId": 5,
+    "content": "Mike, I'm interested in learning Python for data analysis. Can you help with that?",
+    "timestamp": "2024-03-22T14:00:00Z",
+    "type": "text"
+  },
+  {
+    "Id": 8,
+    "matchId": 3,
+    "senderId": 2,
+    "content": "Absolutely! Data analysis is one of my favorite Python applications. We can cover pandas, numpy, and matplotlib.",
+    "timestamp": "2024-03-22T15:30:00Z",
+    "type": "text"
+  },
+  {
+    "Id": 9,
+    "matchId": 4,
+    "senderId": 2,
+    "content": "Emma, I'm new to yoga. Is your class suitable for complete beginners?",
+    "timestamp": "2024-03-23T08:00:00Z",
+    "type": "text"
+  },
+  {
+    "Id": 10,
+    "matchId": 4,
+    "senderId": 3,
+    "content": "Yes, absolutely! I always modify poses for different levels. We'll start with basic postures and breathing.",
+    "timestamp": "2024-03-23T09:15:00Z",
+    "type": "text"
+  }
+]

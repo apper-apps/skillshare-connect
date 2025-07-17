@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "userId": 1,
+    "title": "French Cooking Techniques",
+    "category": "Cooking",
+    "type": "offer",
+    "description": "Learn authentic French cooking methods, knife skills, and classic sauce preparation from a professional chef",
+    "experienceLevel": "Expert",
+    "availability": ["weekends", "evenings"],
+    "createdAt": "2024-03-01T10:00:00Z"
+  },
+  {
+    "Id": 2,
+    "userId": 2,
+    "title": "Python Programming",
+    "category": "Technology",
+    "type": "offer",
+    "description": "Complete Python programming course covering basics to advanced concepts, data structures, and web development",
+    "experienceLevel": "Expert",
+    "availability": ["weekdays", "evenings"],
+    "createdAt": "2024-03-02T14:30:00Z"
+  },
+  {
+    "Id": 3,
+    "userId": 3,
+    "title": "Hatha Yoga",
+    "category": "Fitness",
+    "type": "offer",
+    "description": "Gentle yoga practice focusing on postures, breathing, and relaxation techniques for all levels",
+    "experienceLevel": "Intermediate",
+    "availability": ["mornings", "weekends"],
+    "createdAt": "2024-03-03T09:15:00Z"
+  },
+  {
+    "Id": 4,
+    "userId": 4,
+    "title": "Digital Marketing Strategy",
+    "category": "Business",
+    "type": "offer",
+    "description": "Learn social media marketing, SEO, content creation, and campaign management for small businesses",
+    "experienceLevel": "Intermediate",
+    "availability": ["weekdays", "afternoons"],
+    "createdAt": "2024-03-04T16:45:00Z"
+  },
+  {
+    "Id": 5,
+    "userId": 5,
+    "title": "Spanish Conversation",
+    "category": "Language",
+    "type": "offer",
+    "description": "Improve your Spanish speaking skills through casual conversation and cultural exchange",
+    "experienceLevel": "Expert",
+    "availability": ["evenings", "weekends"],
+    "createdAt": "2024-03-05T11:20:00Z"
+  },
+  {
+    "Id": 6,
+    "userId": 1,
+    "title": "Guitar Lessons",
+    "category": "Music",
+    "type": "request",
+    "description": "Looking to learn acoustic guitar basics, chord progressions, and simple songs",
+    "experienceLevel": "Beginner",
+    "availability": ["weekends", "evenings"],
+    "createdAt": "2024-03-06T13:00:00Z"
+  },
+  {
+    "Id": 7,
+    "userId": 2,
+    "title": "Watercolor Painting",
+    "category": "Art",
+    "type": "request",
+    "description": "Want to learn watercolor techniques, color mixing, and landscape painting",
+    "experienceLevel": "Beginner",
+    "availability": ["weekends", "afternoons"],
+    "createdAt": "2024-03-07T15:30:00Z"
+  },
+  {
+    "Id": 8,
+    "userId": 3,
+    "title": "Photography",
+    "category": "Art",
+    "type": "request",
+    "description": "Interested in learning portrait photography, lighting, and photo editing",
+    "experienceLevel": "Beginner",
+    "availability": ["weekdays", "evenings"],
+    "createdAt": "2024-03-08T10:45:00Z"
+  },
+  {
+    "Id": 9,
+    "userId": 4,
+    "title": "Italian Language",
+    "category": "Language",
+    "type": "request",
+    "description": "Planning a trip to Italy and want to learn basic conversational Italian",
+    "experienceLevel": "Beginner",
+    "availability": ["evenings", "weekends"],
+    "createdAt": "2024-03-09T12:15:00Z"
+  },
+  {
+    "Id": 10,
+    "userId": 5,
+    "title": "Web Design",
+    "category": "Technology",
+    "type": "request",
+    "description": "Want to learn modern web design principles, CSS, and user experience design",
+    "experienceLevel": "Beginner",
+    "availability": ["weekdays", "afternoons"],
+    "createdAt": "2024-03-10T14:00:00Z"
+  }
+]

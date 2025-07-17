@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-warm-white text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-forest-green to-fresh-green text-white px-6 py-3 rounded-md font-medium hover:shadow-lg transition-all duration-200 hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-forest-green border-2 border-forest-green px-6 py-3 rounded-md font-medium hover:bg-soft-beige transition-all duration-200 hover:scale-105;
+  }
+  
+  .btn-accent {
+    @apply bg-gradient-to-r from-warm-orange to-orange-500 text-white px-6 py-3 rounded-md font-medium hover:shadow-lg transition-all duration-200 hover:scale-105;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-card hover:shadow-card-hover transition-all duration-300 p-6;
+  }
+  
+  .skill-card {
+    @apply card hover:scale-[1.02] cursor-pointer border border-gray-100;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fresh-green focus:border-fresh-green transition-all duration-200;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-forest-green to-fresh-green bg-clip-text text-transparent;
+  }
+  
+  .match-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-fresh-green to-green-400 text-white;
+  }
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  @apply top-4 right-4;
+}
+
+.Toastify__toast {
+  @apply rounded-md shadow-lg;
+  min-height: 48px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.Toastify__toast--success {
+  @apply bg-success-green;
+}
+
+.Toastify__toast--warning {
+  @apply bg-warning-orange;
+}
+
+.Toastify__toast--error {
+  @apply bg-error-red;
+}
+
+.Toastify__toast--info {
+  @apply bg-info-blue;
+}
+
+.Toastify__progress-bar {
+  @apply bg-white bg-opacity-30;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}

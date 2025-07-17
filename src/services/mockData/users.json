@@ -1,0 +1,57 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@example.com",
+    "location": "New York, NY",
+    "bio": "Professional chef passionate about teaching cooking techniques and learning new languages",
+    "credits": 24,
+    "rating": 4.8,
+    "joinedDate": "2024-01-15T10:00:00Z",
+    "avatar": null
+  },
+  {
+    "Id": 2,
+    "name": "Mike Chen",
+    "email": "mike.chen@example.com",
+    "location": "San Francisco, CA",
+    "bio": "Software engineer with 10 years of experience. Love teaching programming and learning music",
+    "credits": 18,
+    "rating": 4.9,
+    "joinedDate": "2024-01-20T14:30:00Z",
+    "avatar": null
+  },
+  {
+    "Id": 3,
+    "name": "Emma Williams",
+    "email": "emma.williams@example.com",
+    "location": "Austin, TX",
+    "bio": "Yoga instructor and art enthusiast. Excited to share wellness practices and learn new crafts",
+    "credits": 32,
+    "rating": 4.7,
+    "joinedDate": "2024-02-01T09:15:00Z",
+    "avatar": null
+  },
+  {
+    "Id": 4,
+    "name": "David Rodriguez",
+    "email": "david.rodriguez@example.com",
+    "location": "Chicago, IL",
+    "bio": "Marketing professional and guitar player. Happy to teach business skills and learn cooking",
+    "credits": 12,
+    "rating": 4.6,
+    "joinedDate": "2024-02-10T16:45:00Z",
+    "avatar": null
+  },
+  {
+    "Id": 5,
+    "name": "Lisa Thompson",
+    "email": "lisa.thompson@example.com",
+    "location": "Denver, CO",
+    "bio": "Language teacher fluent in 5 languages. Always eager to learn new skills and share knowledge",
+    "credits": 28,
+    "rating": 4.9,
+    "joinedDate": "2024-02-15T11:20:00Z",
+    "avatar": null
+  }
+]
