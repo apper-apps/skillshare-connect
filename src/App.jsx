@@ -6,14 +6,15 @@ import MyExchanges from "@/pages/MyExchanges";
 import Messages from "@/pages/Messages";
 import Calendar from "@/pages/Calendar";
 import Profile from "@/pages/Profile";
-
+import SkillDetail from "@/pages/SkillDetail";
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
+<Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<BrowseSkills />} />
+            <Route path="skill/:id" element={<SkillDetail />} />
             <Route path="exchanges" element={<MyExchanges />} />
             <Route path="messages" element={<Messages />} />
             <Route path="calendar" element={<Calendar />} />
